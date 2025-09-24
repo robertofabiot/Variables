@@ -10,5 +10,6 @@ namespace Variables.Modelos
         public String MostrarDatos()
         {
             return "Facultad " + Nombre + ", Código: " + Codigo;
+        }
     }
 }

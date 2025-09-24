@@ -32,9 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tbNombre = new System.Windows.Forms.TextBox();
             this.tbCodigo = new System.Windows.Forms.TextBox();
-            this.btnVerificar = new System.Windows.Forms.Button();
+            this.btnVerificarLocal = new System.Windows.Forms.Button();
             this.lblVariableLocal = new System.Windows.Forms.Label();
             this.lblVariableGlobal = new System.Windows.Forms.Label();
+            this.btnVerificarGlobal = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -53,9 +54,9 @@
             this.label2.Location = new System.Drawing.Point(69, 89);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(86, 25);
+            this.label2.Size = new System.Drawing.Size(81, 25);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Código; ";
+            this.label2.Text = "Código:";
             // 
             // tbNombre
             // 
@@ -74,16 +75,16 @@
             this.tbCodigo.Size = new System.Drawing.Size(194, 30);
             this.tbCodigo.TabIndex = 3;
             // 
-            // btnVerificar
+            // btnVerificarLocal
             // 
-            this.btnVerificar.Location = new System.Drawing.Point(170, 153);
-            this.btnVerificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.btnVerificar.Name = "btnVerificar";
-            this.btnVerificar.Size = new System.Drawing.Size(382, 91);
-            this.btnVerificar.TabIndex = 4;
-            this.btnVerificar.Text = "Verificar";
-            this.btnVerificar.UseVisualStyleBackColor = true;
-            this.btnVerificar.Click += new System.EventHandler(this.btnVerificar_Click);
+            this.btnVerificarLocal.Location = new System.Drawing.Point(29, 154);
+            this.btnVerificarLocal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerificarLocal.Name = "btnVerificarLocal";
+            this.btnVerificarLocal.Size = new System.Drawing.Size(252, 91);
+            this.btnVerificarLocal.TabIndex = 4;
+            this.btnVerificarLocal.Text = "Verificar";
+            this.btnVerificarLocal.UseVisualStyleBackColor = true;
+            this.btnVerificarLocal.Click += new System.EventHandler(this.btnVerificar_Click);
             // 
             // lblVariableLocal
             // 
@@ -105,15 +106,28 @@
             this.lblVariableGlobal.Size = new System.Drawing.Size(145, 25);
             this.lblVariableGlobal.TabIndex = 7;
             this.lblVariableGlobal.Text = "Variable Global";
+            this.lblVariableGlobal.Click += new System.EventHandler(this.lblVariableGlobal_Click);
+            // 
+            // btnVerificarGlobal
+            // 
+            this.btnVerificarGlobal.Location = new System.Drawing.Point(314, 154);
+            this.btnVerificarGlobal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btnVerificarGlobal.Name = "btnVerificarGlobal";
+            this.btnVerificarGlobal.Size = new System.Drawing.Size(252, 91);
+            this.btnVerificarGlobal.TabIndex = 8;
+            this.btnVerificarGlobal.Text = "Verificar Global";
+            this.btnVerificarGlobal.UseVisualStyleBackColor = true;
+            this.btnVerificarGlobal.Click += new System.EventHandler(this.btnVerificarGlobal_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(663, 703);
+            this.ClientSize = new System.Drawing.Size(626, 430);
+            this.Controls.Add(this.btnVerificarGlobal);
             this.Controls.Add(this.lblVariableGlobal);
             this.Controls.Add(this.lblVariableLocal);
-            this.Controls.Add(this.btnVerificar);
+            this.Controls.Add(this.btnVerificarLocal);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.tbNombre);
             this.Controls.Add(this.label2);
@@ -134,9 +148,10 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbNombre;
         private System.Windows.Forms.TextBox tbCodigo;
-        private System.Windows.Forms.Button btnVerificar;
+        private System.Windows.Forms.Button btnVerificarLocal;
         private System.Windows.Forms.Label lblVariableLocal;
         private System.Windows.Forms.Label lblVariableGlobal;
+        private System.Windows.Forms.Button btnVerificarGlobal;
     }
 }
 
