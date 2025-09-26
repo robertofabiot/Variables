@@ -47,12 +47,23 @@ namespace Variables
             this.Close();
         }
 
+        int contador = 0;
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (Login(tbUser.Text, tbPassword.Text))
             {
-                new Form1().Show();
+                this.DialogResult = DialogResult.OK;
+                this.Close();
+            }
+            else
+            {
+                contador++;
+            }
+            if (contador >= 3)
+            {
                 this.Hide();
+                MessageBox.Show("Bai", "Errorsito", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                this.Close();
             }
         }
 
